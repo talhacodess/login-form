@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'black-dark': '#00000050',
+                'dull-white': '#FFFFFFB3',
+                'white-light': '#FFFFFF30',
+                'white-medium': '#FFFFFF40',
+                'neon-blue'   : '#2FB8FF',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gradient-to-r from-[#F28383] from-10% via-30% to-[#481EDC]  to-90% flex items-center justify-center h-screen">
+    <div class="max-w-[960px] bg-black-dark lg:grid lg:grid-cols-2 items-center gap-20 p-5 relative rounded-2xl md:grid md:grid-cols-2">
+    <!--Div For images-->
+    <div>
+        <img src="./assets/signup-background.svg" alt="">
+        <img src="./assets/teamwork.svg" alt="" class="absolute top-36 lg:w-auto md:w-[300px]">
+    </div>
+<!--Div For Content-->
+    <div class="max-w-80 grid gap-5">
+          <h1 class="font-bold text-white leading-[48px] text-[40px]">Sign in</h1>
+          <p class="text-dull-white">Access to 300+ hours of courses, tutorials and livestreams</p>
+          <form action="" method="post" class="text-white space-y-5">
+            <div class="relative">
+
+                <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-start text-blue-300">
+                    <i class="fa-solid fa-envelope-open"></i>
+                </div>
+                <input type="email" placeholder="Email Address" class="w-80 py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring focus:ring-neon-blue focus:drop-shadow-lg">
+            </div>
+            <div class="relative">
+
+                <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-start text-blue-300">
+                    <i class="fa-solid fa-lock"></i>
+
+                </div>
+                <input type="password" placeholder="Password" class="w-80 py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring focus:ring-neon-blue focus:drop-shadow-lg">
+            </div>
+            <button class="bg-gradient-to-r from-blue-400 to-cyan-200 w-80 font-semibold rounded-full py-2">Sign in</button>
+          </form>
+
+          <div class="text-dull-white border-t border-white-light pt-4 space-y-4 text-sm">
+            <p>Don't have an account?<a class="text-neon-blue font-semibold cursor-pointer ml-1" href="">Sign up</a></p>
+            <p>Forgot password?<a class="text-neon-blue font-semibold cursor-pointer  ml-1" href="">Reset password</a></p>
+            <p>Don't have a password yet?<a class="text-neon-blue font-semibold cursor-pointer  ml-1" href="">Set password</a></p>
+          </div>
+    </div>
+</div>
+</body>
+</html>
